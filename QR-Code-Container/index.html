@@ -1,28 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | QR code component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Outfit:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
-  Improve your front-end skills by building projects
+    <title>Frontend Mentor | QR code component</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+        font-family: Outfit, sans-serif;
+      }
+      .container {
+        width: 100vw;
+        height: 100vh;
+        background-color: hsl(212, 45%, 89%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .card {
+        background-color: hsl(0, 0%, 100%);
+        width: 375px;
+        height: 600px;
+        /* padding: 1rem; */
+        border-radius: 1.5rem;
+        text-align: center;
+        position: relative;
+      }
 
-  Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+      .card > img {
+        width: 340px;
+        height: 340px;
+        border-radius: 1rem;
+      }
+
+      .card > h2 {
+        padding: 2rem;
+        position: absolute;
+        top: 20rem;
+      }
+
+      .card > p {
+        font-size: 15px;
+        padding: 4rem;
+        color: hsl(220, 15%, 55%);
+        position: absolute;
+        top: 30rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <img src="images/image-qr-code.png" alt="" />
+        <h2>Improve Your front-end skills by building projects</h2>
+        <p>
+          Scan the QR code to visit Frontend Mentor and take your coding skills
+          to next level
+        </p>
+      </div>
+    </div>
+  </body>
 </html>
